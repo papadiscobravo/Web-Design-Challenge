@@ -1,5 +1,5 @@
 /* giving the body a dark background to better see the bright colored boxes */
-body {background: rgb(240, 240, 240);}
+body {background: white;}
 .navbar-brand {background: rgb(9, 147, 233);}
 .btn {background: white}
 
