@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <meta charset="UTF-8">
-        <title>HW11 lnding page</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <title>HW11 landing page</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
 <!--BOOTSTRAP NAVBAR-->
-
+<!--here begins the nav-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="../index.html">weather data home</a>
+
+<!--here's an anchor tag to index.html with a class of "navbar-brand"-->
+  <a class="navbar-brand" href="index.html">weather data home</a>
+
+<!--here's a button with a class of "navbar-toggler"
+this must be the button that contains the link in the line before-->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
+<!--here begins a div of class "collapse navbar-collapse" and id "navbarSupportedContent"-->
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+<!--here begins an unordered list with a class of "navbar-nav mr-auto"-->
     <ul class="navbar-nav mr-auto">
 
+<!--here's the first list item, a link to comparisons.html-->
       <li class="nav-item active">
           <a class="nav-link" href="comparisons.html">comparisons<span class="sr-only">(current)</span></a>
         </li>
+
+<!--here's the second list item, a link to data.html-->
         <li class="nav-item active">
             <a class="nav-link" href="data.html">data<span class="sr-only">(current)</span></a>
           </li>
 
-      <li class="nav-item dropdown">
+<!--here's the third list item, the dropdown menu, with a class of "nav-item dropdown"-->
+<li class="nav-item dropdown">
+  <!--if there were a main page that linked to all four visualizations, I'd make this anchor tag link to it
+  but in the event I'm leaving it empty:-->
         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Plots
         </a>
+<!--this is one div with the class of "dropdown-menu" and four anchor tags, one for each of the four visualization pages:-->
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="visualizations/vis1.html">visualization 1</a>
           <a class="dropdown-item" href="visualizations/vis2.html">visualization 2</a>
@@ -37,13 +53,17 @@
           <a class="dropdown-item" href="visualizations/vis4.html">visualization 4</a>
         </div>
       </li>
-
+<!--here ends the unordered list-->
   </ul>
+
+<!--here's a form element that's styled as the Search tool-->
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+<!--here ends the div-->
   </div>
+<!--here ends the nav-->
 </nav>
 
 
@@ -51,7 +71,7 @@
 
 
 This is the landing page for my homework 11 assignment.<br>
-It has four visualization pages, 
+There are also four visualization pages, 
 a comparisons page, and a data page.
 
 
