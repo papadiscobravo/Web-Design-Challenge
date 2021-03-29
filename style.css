@@ -3,12 +3,28 @@ body {background: rgb(240, 240, 240);}
 .navbar-brand {background: rgb(9, 147, 233);}
 .btn {background: white}
 
-        /* Here we define some styles that will ONLY be applied at screen sizes below 600 pixels */
+        /* Here we define some styles that will ONLY be applied at screen sizes below 600 pixels 
   @media (max-width: 1200px) {
         nav {background: rgb(9, 147, 233);}
         .nav {background: rgb(9, 147, 233);}
         .navbar {background: rgb(9, 147, 233);}
         .collapse {background: rgb(9, 147, 233);}
-/*        .navbar navbar-expand-lg navbar-light bg-light {background: rgb(9, 147, 233);}*/
+        .navbar navbar-expand-lg navbar-light bg-light {background: rgb(9, 147, 233);}
         .navbar-toggler {background: rgb(9, 147, 233);}
+        */
+
+@media (max-width: 1200px) {
+    .navbar-light.bg-light {
+        background-color: rgb(9, 147, 233) !important;
     }
+    .navbar-brand {
+        color:white !important;
+        font-weight: bolder;
+    }
+    .dropdown-item {
+        color:teal !important;
+    }
+    .nav-link {
+        color:white !important;
+    }
+}
